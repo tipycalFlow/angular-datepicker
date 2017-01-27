@@ -1,6 +1,6 @@
 {
-  "name": "angularjs-datepicker",
-  "version": "2.1.12",
+  "name": "angularjs-date-picker",
+  "version": "2.1.13",
   "description": "A datepicker directive for angularjs.",
   "authors": [
     "Filippo Oretti <filippo.oretti@gmail.com",
@@ -20,7 +20,7 @@
     "./dist/angular-datepicker.js",
     "./dist/angular-datepicker.sourcemap.map"
   ],
-  "homepage": "http://720kb.github.io/angular-datepicker",
+  "homepage": "https://github.com/tipycalFlow/angular-datepicker",
   "ignore": [
     "**/.*",
     "node_modules",
