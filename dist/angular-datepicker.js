@@ -352,6 +352,7 @@
               // set selected date components (from datepicker input field) on show
               dateString = angular.element(angular.element(theCalendar).parent()[0].querySelector('input')).val().replace(/\//g, '-');
               date = new Date(dateString);
+              if(isNaN(date.getTime())) date = new Date();
               $scope.selectedMonth = $scope.monthNumber = Number($filter('date')(date, 'MM'));
               $scope.selectedDay = $scope.day = Number($filter('date')(date, 'dd'));
               $scope.selectedYear = $scope.year = Number($filter('date')(date, 'yyyy'));
