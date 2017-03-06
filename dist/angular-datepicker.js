@@ -357,6 +357,7 @@
               $scope.selectedDay = $scope.day = Number($filter('date')(date, 'dd'));
               $scope.selectedYear = $scope.year = Number($filter('date')(date, 'yyyy'));
               $scope.month = $filter('date')(new Date($scope.year, $scope.monthNumber - 1), 'MMMM');
+              setDaysInMonth($scope.monthNumber, $scope.year);
             } else {
 
               classHelper.add(theCalendar, '_720kb-datepicker-open');
